@@ -26,14 +26,60 @@
         android:layout_below="@+id/btnautoVK"
         android:layout_alignParentStart="true"
         android:layout_marginTop="29dp"
-        android:layout_alignEnd="@+id/btnautoVK" />
+        android:headerDividersEnabled="false"
+        android:layout_toStartOf="@+id/button" />
 
-    <TextView
-        android:text="TextView"
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView"
+        android:inputType="textPersonName"
+        android:text="test"
+        android:ems="10"
         android:layout_alignParentTop="true"
+        android:layout_marginTop="35dp"
+        android:id="@+id/txtBox"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Add Friend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="14dp"
+        android:id="@+id/btnAddFriend"
+        android:layout_below="@+id/txtBox"
+        android:layout_alignStart="@+id/button"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="66dp" />
+        android:onClick="clickAddFriend" />
+
+    <Button
+        android:text="All Send MESSAGE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:onClick="clickBtnSendMes"
+        android:layout_marginStart="29dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/txtBox" />
+
+    <Button
+        android:text="Invite Group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnAddFriend"
+        android:layout_alignStart="@+id/btnAddFriend"
+        android:layout_marginTop="13dp"
+        android:id="@+id/btnGoGroup"
+        android:layout_alignParentEnd="true"
+        android:onClick="clickGoGroup" />
+
+    <Button
+        android:text="Wall Post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/btnGoGroup"
+        android:id="@+id/btnWall"
+        android:layout_alignParentEnd="true"
+        android:onClick="clickWallPost" />
 </RelativeLayout>
